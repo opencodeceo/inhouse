@@ -42,10 +42,11 @@ export default function IntroSection() {
           <i className="ri-rocket-line mr-2"></i> Start Exploring
         </button>
         
-        <Link href="/explore">
-          <a className="bg-transparent border border-cosmic-purple hover:bg-cosmic-purple/20 text-moon-gray font-montserrat px-5 py-2 rounded-full transition-colors flex items-center justify-center">
-            <i className="ri-play-circle-line mr-2"></i> Watch Intro
-          </a>
+        <Link 
+          href="/explore" 
+          className="bg-transparent border border-cosmic-purple hover:bg-cosmic-purple/20 text-moon-gray font-montserrat px-5 py-2 rounded-full transition-colors flex items-center justify-center"
+        >
+          <i className="ri-play-circle-line mr-2"></i> Watch Intro
         </Link>
       </motion.div>
     </section>

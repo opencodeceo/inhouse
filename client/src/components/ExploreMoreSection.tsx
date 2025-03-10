@@ -48,10 +48,11 @@ export default function ExploreMoreSection() {
             <div className="p-4">
               <h4 className="font-montserrat text-star-white text-lg mb-2">{content.title}</h4>
               <p className="text-moon-gray text-sm mb-3">{content.description}</p>
-              <Link href={content.link}>
-                <a className="text-saturn-gold hover:text-star-white transition-colors text-sm flex items-center">
-                  Discover more <i className="ri-arrow-right-line ml-1"></i>
-                </a>
+              <Link 
+                href="/explore" 
+                className="text-saturn-gold hover:text-star-white transition-colors text-sm flex items-center"
+              >
+                Discover more <i className="ri-arrow-right-line ml-1"></i>
               </Link>
             </div>
           </motion.div>

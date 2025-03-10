@@ -154,15 +154,17 @@ export default function PlanetDetail() {
             </div>
             
             <div className="mt-6 flex flex-col sm:flex-row">
-              <Link href="/quiz">
-                <a className="bg-mars-red hover:bg-mars-red/80 text-star-white font-montserrat px-4 py-1.5 rounded-full text-sm transition-colors mr-0 mb-3 sm:mb-0 sm:mr-3 text-center sm:text-left">
-                  <i className="ri-question-line mr-1"></i> Take {selectedPlanet.name} Quiz
-                </a>
+              <Link 
+                href="/quiz"
+                className="bg-mars-red hover:bg-mars-red/80 text-star-white font-montserrat px-4 py-1.5 rounded-full text-sm transition-colors mr-0 mb-3 sm:mb-0 sm:mr-3 text-center sm:text-left"
+              >
+                <i className="ri-question-line mr-1"></i> Take {selectedPlanet.name} Quiz
               </Link>
-              <Link href={`/planet/${selectedPlanet.id}`}>
-                <a className="bg-transparent border border-cosmic-purple hover:bg-cosmic-purple/20 text-moon-gray font-montserrat px-4 py-1.5 rounded-full text-sm transition-colors text-center sm:text-left">
-                  <i className="ri-arrow-right-line mr-1"></i> Explore More
-                </a>
+              <Link 
+                href={`/planet/${selectedPlanet.id}`}
+                className="bg-transparent border border-cosmic-purple hover:bg-cosmic-purple/20 text-moon-gray font-montserrat px-4 py-1.5 rounded-full text-sm transition-colors text-center sm:text-left"
+              >
+                <i className="ri-arrow-right-line mr-1"></i> Explore More
               </Link>
             </div>
           </div>
