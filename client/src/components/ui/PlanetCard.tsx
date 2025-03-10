@@ -31,10 +31,11 @@ export default function PlanetCard({ planet }: PlanetCardProps) {
           <span>Moons: {planet.moons}</span>
           <span>{planet.orderFromSun}{getOrdinalSuffix(planet.orderFromSun)} from Sun</span>
         </div>
-        <Link href={`/planet/${planet.id}`}>
-          <a className="text-saturn-gold hover:text-star-white transition-colors text-sm flex items-center">
-            Explore planet <i className="ri-arrow-right-line ml-1"></i>
-          </a>
+        <Link 
+          href={`/planet/${planet.id}`}
+          className="text-saturn-gold hover:text-star-white transition-colors text-sm flex items-center"
+        >
+          Explore planet <i className="ri-arrow-right-line ml-1"></i>
         </Link>
       </div>
     </div>
