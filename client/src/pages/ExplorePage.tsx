@@ -37,10 +37,11 @@ export default function ExplorePage() {
     <main className="container mx-auto px-4 py-6">
       <div className="flex justify-between items-center mb-8">
         <h1 className="font-orbitron text-star-white text-3xl">Explore the Universe</h1>
-        <Link href="/">
-          <a className="text-moon-gray hover:text-star-white transition-colors flex items-center">
-            <i className="ri-home-line mr-1"></i> Back to Home
-          </a>
+        <Link 
+          href="/"
+          className="text-moon-gray hover:text-star-white transition-colors flex items-center"
+        >
+          <i className="ri-home-line mr-1"></i> Back to Home
         </Link>
       </div>
 
@@ -61,15 +62,17 @@ export default function ExplorePage() {
               and the fascinating phenomena that shape our universe.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/planet/3">
-                <Button className="bg-mars-red hover:bg-mars-red/80 text-star-white">
-                  <i className="ri-planet-line mr-2"></i> Explore Planets
-                </Button>
+              <Link 
+                href="/planet/3"
+                className="bg-mars-red hover:bg-mars-red/80 text-star-white font-montserrat px-5 py-2 rounded-full transition-colors flex items-center justify-center"
+              >
+                <i className="ri-planet-line mr-2"></i> Explore Planets
               </Link>
-              <Link href="/quiz">
-                <Button variant="outline" className="text-moon-gray border-cosmic-purple/50 hover:bg-cosmic-purple/20">
-                  <i className="ri-question-line mr-2"></i> Test Your Knowledge
-                </Button>
+              <Link 
+                href="/quiz"
+                className="bg-transparent border border-cosmic-purple/50 hover:bg-cosmic-purple/20 text-moon-gray font-montserrat px-5 py-2 rounded-full transition-colors flex items-center justify-center"
+              >
+                <i className="ri-question-line mr-2"></i> Test Your Knowledge
               </Link>
             </div>
           </div>
@@ -130,10 +133,11 @@ export default function ExplorePage() {
                 <div className="p-4">
                   <h4 className="font-montserrat text-star-white text-lg mb-2">{content.title}</h4>
                   <p className="text-moon-gray text-sm mb-3">{content.description}</p>
-                  <Link href={content.link}>
-                    <a className="text-saturn-gold hover:text-star-white transition-colors text-sm flex items-center">
-                      Discover more <i className="ri-arrow-right-line ml-1"></i>
-                    </a>
+                  <Link 
+                    href={content.link}
+                    className="text-saturn-gold hover:text-star-white transition-colors text-sm flex items-center"
+                  >
+                    Discover more <i className="ri-arrow-right-line ml-1"></i>
                   </Link>
                 </div>
               </motion.div>
@@ -222,10 +226,11 @@ export default function ExplorePage() {
               </div>
             </CardContent>
             <CardFooter>
-              <Link href="/quiz">
-                <Button className="bg-mars-red hover:bg-mars-red/80 text-star-white w-full sm:w-auto">
-                  <i className="ri-question-line mr-2"></i> Test Your Knowledge
-                </Button>
+              <Link 
+                href="/quiz"
+                className="bg-mars-red hover:bg-mars-red/80 text-star-white font-montserrat px-5 py-2 rounded-full transition-colors flex items-center justify-center w-full sm:w-auto"
+              >
+                <i className="ri-question-line mr-2"></i> Test Your Knowledge
               </Link>
             </CardFooter>
           </Card>
@@ -304,15 +309,17 @@ export default function ExplorePage() {
           Continue your journey through the solar system! Explore planets, take quizzes, and discover fascinating facts about our cosmic neighborhood.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/">
-            <Button className="bg-mars-red hover:bg-mars-red/80 text-star-white">
-              <i className="ri-rocket-line mr-2"></i> Launch Interactive Explorer
-            </Button>
+          <Link 
+            href="/"
+            className="bg-mars-red hover:bg-mars-red/80 text-star-white font-montserrat px-5 py-2 rounded-full transition-colors flex items-center justify-center"
+          >
+            <i className="ri-rocket-line mr-2"></i> Launch Interactive Explorer
           </Link>
-          <Link href="/quiz">
-            <Button variant="outline" className="text-moon-gray border-cosmic-purple/50 hover:bg-cosmic-purple/20">
-              <i className="ri-question-line mr-2"></i> Challenge Yourself
-            </Button>
+          <Link 
+            href="/quiz"
+            className="bg-transparent border border-cosmic-purple/50 hover:bg-cosmic-purple/20 text-moon-gray font-montserrat px-5 py-2 rounded-full transition-colors flex items-center justify-center"
+          >
+            <i className="ri-question-line mr-2"></i> Challenge Yourself
           </Link>
         </div>
       </div>
