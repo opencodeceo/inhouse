@@ -1,0 +1,10 @@
+To create a preview image for your GitHub repository:
+
+1. Take a screenshot of the running application
+2. Save the screenshot as preview.png in the root directory
+3. This image will be displayed in your README.md
+
+Alternatively, you can:
+- Use the browser's screenshot function
+- Use a screen recording tool to capture a GIF of the interactive features
+- Create a collage showing multiple aspects of the application
