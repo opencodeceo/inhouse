@@ -33,28 +33,28 @@ export default function Footer() {
             <h4 className="font-montserrat text-star-white text-lg mb-4">Explore</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Solar System</a>
+                <Link href="/" className="text-moon-gray hover:text-star-white transition-colors">
+                  Solar System
                 </Link>
               </li>
               <li>
-                <Link href="/planet/3">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Planets</a>
+                <Link href="/planet/3" className="text-moon-gray hover:text-star-white transition-colors">
+                  Planets
                 </Link>
               </li>
               <li>
-                <Link href="/explore">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Moons</a>
+                <Link href="/explore" className="text-moon-gray hover:text-star-white transition-colors">
+                  Moons
                 </Link>
               </li>
               <li>
-                <Link href="/explore">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Asteroids & Comets</a>
+                <Link href="/explore" className="text-moon-gray hover:text-star-white transition-colors">
+                  Asteroids & Comets
                 </Link>
               </li>
               <li>
-                <Link href="/explore">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Sun & Stars</a>
+                <Link href="/explore" className="text-moon-gray hover:text-star-white transition-colors">
+                  Sun & Stars
                 </Link>
               </li>
             </ul>
@@ -64,28 +64,28 @@ export default function Footer() {
             <h4 className="font-montserrat text-star-white text-lg mb-4">Learn</h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/explore">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Articles</a>
+                <Link href="/explore" className="text-moon-gray hover:text-star-white transition-colors">
+                  Articles
                 </Link>
               </li>
               <li>
-                <Link href="/quiz">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Quizzes</a>
+                <Link href="/quiz" className="text-moon-gray hover:text-star-white transition-colors">
+                  Quizzes
                 </Link>
               </li>
               <li>
-                <Link href="/explore">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Videos</a>
+                <Link href="/explore" className="text-moon-gray hover:text-star-white transition-colors">
+                  Videos
                 </Link>
               </li>
               <li>
-                <Link href="/explore">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Resources</a>
+                <Link href="/explore" className="text-moon-gray hover:text-star-white transition-colors">
+                  Resources
                 </Link>
               </li>
               <li>
-                <Link href="/explore">
-                  <a className="text-moon-gray hover:text-star-white transition-colors">Educational Tools</a>
+                <Link href="/explore" className="text-moon-gray hover:text-star-white transition-colors">
+                  Educational Tools
                 </Link>
               </li>
             </ul>

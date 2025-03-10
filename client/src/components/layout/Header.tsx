@@ -16,10 +16,8 @@ export default function Header() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
             <i className="ri-planet-line text-saturn-gold text-3xl mr-2"></i>
-            <Link href="/">
-              <a className="font-orbitron text-star-white text-xl md:text-2xl font-bold">
-                Cosmic Explorer
-              </a>
+            <Link href="/" className="font-orbitron text-star-white text-xl md:text-2xl font-bold">
+              Cosmic Explorer
             </Link>
           </div>
           
@@ -37,25 +35,29 @@ export default function Header() {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-6">
-            <Link href="/">
-              <a className={`font-montserrat ${location === "/" ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}>
-                Home
-              </a>
+            <Link 
+              href="/" 
+              className={`font-montserrat ${location === "/" ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}
+            >
+              Home
             </Link>
-            <Link href="/planet/3">
-              <a className={`font-montserrat ${location.startsWith("/planet") ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}>
-                Explore
-              </a>
+            <Link 
+              href="/planet/3" 
+              className={`font-montserrat ${location.startsWith("/planet") ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}
+            >
+              Explore
             </Link>
-            <Link href="/explore">
-              <a className={`font-montserrat ${location === "/explore" ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}>
-                Learn
-              </a>
+            <Link 
+              href="/explore" 
+              className={`font-montserrat ${location === "/explore" ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}
+            >
+              Learn
             </Link>
-            <Link href="/quiz">
-              <a className={`font-montserrat ${location === "/quiz" ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}>
-                Quiz
-              </a>
+            <Link 
+              href="/quiz" 
+              className={`font-montserrat ${location === "/quiz" ? "text-star-white" : "text-moon-gray hover:text-star-white"} transition-colors`}
+            >
+              Quiz
             </Link>
           </nav>
           
@@ -87,25 +89,33 @@ export default function Header() {
       {/* Mobile Menu */}
       <div className={`${mobileMenuOpen ? "block" : "hidden"} md:hidden bg-space-blue/95 backdrop-blur-md fixed inset-0 z-40 pt-20`}>
         <nav className="container mx-auto px-6 py-4 flex flex-col space-y-6">
-          <Link href="/">
-            <a className="font-montserrat text-xl text-star-white border-b border-cosmic-purple/30 pb-2" onClick={() => setMobileMenuOpen(false)}>
-              Home
-            </a>
+          <Link 
+            href="/" 
+            className="font-montserrat text-xl text-star-white border-b border-cosmic-purple/30 pb-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Home
           </Link>
-          <Link href="/planet/3">
-            <a className="font-montserrat text-xl text-moon-gray border-b border-cosmic-purple/30 pb-2" onClick={() => setMobileMenuOpen(false)}>
-              Explore
-            </a>
+          <Link 
+            href="/planet/3" 
+            className="font-montserrat text-xl text-moon-gray border-b border-cosmic-purple/30 pb-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Explore
           </Link>
-          <Link href="/explore">
-            <a className="font-montserrat text-xl text-moon-gray border-b border-cosmic-purple/30 pb-2" onClick={() => setMobileMenuOpen(false)}>
-              Learn
-            </a>
+          <Link 
+            href="/explore" 
+            className="font-montserrat text-xl text-moon-gray border-b border-cosmic-purple/30 pb-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Learn
           </Link>
-          <Link href="/quiz">
-            <a className="font-montserrat text-xl text-moon-gray border-b border-cosmic-purple/30 pb-2" onClick={() => setMobileMenuOpen(false)}>
-              Quiz
-            </a>
+          <Link 
+            href="/quiz" 
+            className="font-montserrat text-xl text-moon-gray border-b border-cosmic-purple/30 pb-2"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Quiz
           </Link>
         </nav>
       </div>
